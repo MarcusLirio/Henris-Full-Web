@@ -1,0 +1,13 @@
+.navbar
+{
+    background: black !important;
+}
+.offcanvas
+{
+    background: rgb(12, 12, 12)!important;
+}
+.offcanvas-body .row
+{
+    justify-content: center;
+    align-items: center;
+}

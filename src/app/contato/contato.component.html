@@ -1,0 +1,49 @@
+<section class="Contato">
+<menu></menu>
+<div class="row">
+    <div class="texto col-sm-6">
+        <div class="texto-center">
+            <h2>Me mande seu contato, quem sabe não trabalhamos juntos?!</h2>
+        <img src="/assets/MarcusPicContatos.png" style="width: 40%;border-radius:50%;">
+        </div>
+    </div>
+    <form novalidate [formGroup]="cadastroForm" class="formulario col-sm-6">
+            <div class="form-floating mb-3">
+                <input type="text" name="nome" [(ngModel)]="contato.nome" class="form-control" id="floatingInput"  placeholder="Nome" formControlName="nome" [ngClass]="{'is-invalid': displayMessage['nome'] }">
+                <label for="floatingInput"  for="nome">Nome</label>
+                <span class="text-danger" *ngIf="displayMessage['nome']">
+                <p [innerHTML]="displayMessage['nome']"></p>
+            </span>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" name="sobrenome" [(ngModel)]="contato.sobrenome" class="form-control" id="floatingInput" placeholder="Sobrenome"  formControlName="sobrenome" [ngClass]="{'is-invalid': displayMessage['sobrenome'] }">
+                <label for="floatingInput"  for="sobrenome">Sobrenome</label>
+                <span class="text-danger" *ngIf="displayMessage['sobrenome']">
+                    <p class="erro" [innerHTML]="displayMessage['sobrenome']"></p>
+                </span>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" nome="email" [(ngModel)]="contato.email" class="form-control" id="floatingInput" placeholder="name@example.com" formControlName="email" [ngClass]="{'is-invalid': displayMessage['email'] }">
+                <label for="floatingInput"  for="email">Email</label>
+                <span class="text-danger" *ngIf="displayMessage['email']">
+                    <p [innerHTML]="displayMessage['email']"></p>
+                </span>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="number" name="telefone" [(ngModel)]="contato.telefone" class="form-control" id="floatingInput" placeholder="Apenas Números" formControlName="telefone" [ngClass]="{'is-invalid': displayMessage['telefone'] }">
+                <label for="floatingInput"  for="telefone">Telefone</label>
+                <span class="text-danger" *ngIf="displayMessage['telefone']">
+                    <p [innerHTML]="displayMessage['telefone']"></p>
+                </span>
+            </div>
+            <div  class="form-floating mb-3">
+                <button type="button"
+                (click)="Cadastrar()" 
+                class="btn btn-primary"
+                [disabled]="!cadastroForm.valid"
+                >Enviar</button>
+            </div>
+    </form>
+</div>
+
+</section>

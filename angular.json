@@ -30,6 +30,9 @@
               "src/assets"
             ],
             "styles": [
+              {
+                "input": "node_modules/@progress/kendo-theme-default/dist/all.css"
+              },
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
@@ -75,9 +78,9 @@
               "browserTarget": "Home:build:production",
               "optimization": {
                 "scripts": true,
-                 "styles": true,
-                 "fonts": false
-             }
+                "styles": true,
+                "fonts": false
+              }
             },
             "development": {
               "browserTarget": "Home:build:development"
@@ -103,6 +106,9 @@
               "src/assets"
             ],
             "styles": [
+              {
+                "input": "node_modules/@progress/kendo-theme-default/dist/all.css"
+              },
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],

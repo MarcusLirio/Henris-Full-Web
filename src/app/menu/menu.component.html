@@ -1,0 +1,35 @@
+<nav class="navbar navbar-dark bg-dark  fixed-top">
+    
+    <div class="container-fluid">
+      <a class="navbar-brand col-sm-8" >MARCUS</a>
+      <a class="navbar-brand col-sm-1" [routerLink]="['']">Inicio</a>
+      <a class="navbar-brand col-sm-1" [routerLink]="['/contato']">Contactar</a>
+      <a class="navbar-brand col-sm-1" [routerLink]="['/equipe']">Equipe</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Redes</h5>
+          <button type="button"  class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="Contatos">
+            <img src="/assets/MarcusPic.png" style="width: 300px;height:300px;margin:60px;border-radius: 20px;">
+        </div>
+        <div class="offcanvas-body" style="margin:5px;">
+            <div class="row">
+                <div class="col-sm-2">
+                    <a href="https://www.linkedin.com/in/marcus-vinicius-lirio-a61ab8202/"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <div class="col-sm-2">
+                    <a href="https://github.com/MarcusLirio"><i class="bi bi-github"></i></a>
+                </div>
+                <div class="col-sm-2">
+                    <a href="https://www.instagram.com/marcuskks/"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</nav>
