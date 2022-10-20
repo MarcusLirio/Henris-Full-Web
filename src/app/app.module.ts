@@ -29,7 +29,7 @@ import { EquipeComponent } from './equipe/equipe.component';
     MatFormFieldModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
 
   ],
   providers: [],
